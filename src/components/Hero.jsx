@@ -35,8 +35,10 @@ const Hero = () => {
       </video>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center text-white">
-        <h1 className="text-6xl font-bold mb-4">Vossé</h1>
-        <p className="text-2xl">Where elegance meets innovation</p>
+        <h1 className="text-3xl md:text-6xl font-bold md:mb-4">Vossé</h1>
+        <p className="text-[20px] md:text-2xl">
+          Where elegance meets innovation
+        </p>
       </div>
     </section>
   );

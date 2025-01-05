@@ -9,17 +9,21 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const menuItems = ["Home", "Services", "About", "Contact"];
+  const menuItems = ["Home", "About", "Contact"];
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-90 shadow-md z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-gray-800">Vossé</div>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="text-2xl font-bold cursor-pointer"
+        >
+          Vossé
+        </Link>
         <div className="md:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-gray-600 hover:text-gray-900"
-          >
+          <button onClick={toggleMenu}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -34,7 +38,7 @@ const Navbar = () => {
                 to={item.toLowerCase()}
                 smooth={true}
                 duration={500}
-                className="text-gray-600 hover:text-gray-900 cursor-pointer"
+                className="hover:text-gray-900 text-lg cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item}
