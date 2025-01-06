@@ -12,13 +12,13 @@ const Navbar = () => {
   const menuItems = ["Home", "About", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-90 shadow-md z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-80 backdrop-blur-md shadow-md z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link
           to="home"
           smooth={true}
           duration={500}
-          className="text-2xl font-bold cursor-pointer"
+          className="text-3xl font-bold cursor-pointer text-[#c5a880]"
         >
           Vossé
         </Link>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 to={item.toLowerCase()}
                 smooth={true}
                 duration={500}
-                className="hover:text-gray-900 text-lg cursor-pointer"
+                className="hover:text-[#c5a880] text-lg font-semibold cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item}

@@ -161,7 +161,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-10 md:py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-5">
+        <h2 className="text-[#c5a880] text-3xl md:text-4xl font-bold text-center mb-5">
           Contact Us
         </h2>
         <div className="max-w-3xl mx-auto">
