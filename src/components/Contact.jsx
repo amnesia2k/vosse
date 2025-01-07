@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
-import { Label } from "./ui/label";
+// import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
@@ -63,7 +63,7 @@ const Contact = () => {
             noValidate
           >
             <div>
-              <Label htmlFor="name">Name</Label>
+              {/* <Label htmlFor="name">Name</Label> */}
               <Input
                 type="text"
                 id="name"
@@ -72,8 +72,9 @@ const Contact = () => {
                 required
               />
             </div>
+
             <div>
-              <Label htmlFor="email">Email</Label>
+              {/* <Label htmlFor="email">Email</Label> */}
               <Input
                 type="email"
                 id="email"
@@ -82,8 +83,9 @@ const Contact = () => {
                 required
               />
             </div>
+
             <div>
-              <Label htmlFor="message">Message</Label>
+              {/* <Label htmlFor="message">Message</Label> */}
               <Textarea
                 id="message"
                 name="message"
@@ -91,6 +93,7 @@ const Contact = () => {
                 required
               />
             </div>
+
             <div>
               <Button
                 variant="ghost"
