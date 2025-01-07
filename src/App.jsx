@@ -11,10 +11,10 @@ const App = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>About Vossé - Redefining Real Estate Excellence</title>
+        <title>Vossé</title>
         <meta
           name="description"
-          content="Learn about Vossé, your trusted real estate partner. We redefine real estate with exceptional service, tailored solutions, and seamless sales. Your success is our success."
+          content="Discover Vossé, where exceptional service and efficiency redefine real estate. We specialize in helping homeowners secure the best deals with seamless sales. Partner with us for tailored, results-driven solutions that maximize value and minimize stress."
         />
         <meta
           name="keywords"
@@ -24,13 +24,10 @@ const App = () => {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="About Vossé - Redefining Real Estate Excellence"
-        />
+        <meta property="og:title" content="Vossé" />
         <meta
           property="og:description"
-          content="Discover how Vossé redefines real estate with exceptional service and tailored solutions. Learn more about our seamless approach to buying and selling homes."
+          content="Discover Vossé, where exceptional service and efficiency redefine real estate. We specialize in helping homeowners secure the best deals with seamless sales. Partner with us for tailored, results-driven solutions that maximize value and minimize stress."
         />
         <meta property="og:url" content="https://vosse.ca/" />
         <meta
@@ -40,13 +37,10 @@ const App = () => {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="About Vossé - Redefining Real Estate Excellence"
-        />
+        <meta name="twitter:title" content="Vossé" />
         <meta
           name="twitter:description"
-          content="Learn about Vossé, your trusted real estate partner. We redefine real estate with exceptional service, tailored solutions, and seamless sales."
+          content="Discover Vossé, where exceptional service and efficiency redefine real estate. We specialize in helping homeowners secure the best deals with seamless sales. Partner with us for tailored, results-driven solutions that maximize value and minimize stress."
         />
         <meta
           name="twitter:image"
