@@ -1,3 +1,5 @@
+import { aboutImg } from "@/assets";
+
 const About = () => {
   return (
     <section id="about" className="pt-16 pb-5 md:py-20 bg-gray-50">
@@ -8,7 +10,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start">
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <img
-              src="/path-to-your-image.jpg"
+              src={aboutImg}
               alt="About Vossé"
               className="rounded-lg shadow-md w-full"
             />
