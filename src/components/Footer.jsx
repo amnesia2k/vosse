@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,14 +11,17 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-gray-300">
-              <Facebook size={27} />
+            <a href="#" className="hover:text-[#c5a880]">
+              <Facebook size={28} />
             </a>
-            <a href="#" className="hover:text-gray-300">
-              <Twitter size={27} />
+            <a href="#" className="hover:text-[#c5a880]">
+              <Twitter size={28} />
             </a>
-            <a href="#" className="hover:text-gray-300">
-              <Instagram size={27} />
+            <a href="#" className="hover:text-[#c5a880]">
+              <Instagram size={28} />
+            </a>
+            <a href="mailto:support@vosse.ca" className="hover:text-[#c5a880]">
+              <Mail size={28} />
             </a>
           </div>
         </div>
