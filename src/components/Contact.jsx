@@ -1,14 +1,12 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
-// import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 
 const Contact = () => {
   const formRef = useRef();
-  // const [formStatus, setFormStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -23,7 +21,6 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    // setFormStatus(null); // Reset form status
 
     try {
       await emailjs.sendForm(
@@ -32,17 +29,9 @@ const Contact = () => {
         formRef.current,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
-      // setFormStatus({
-      //   success: true,
-      //   message: "Message sent successfully!",
-      // });
       toast.success("Email sent successfully!");
       form.reset();
     } catch (error) {
-      // setFormStatus({
-      //   success: false,
-      //   message: "Failed to send message. Please try again later.",
-      // });
       toast.error(`Error: ${error.text || "Something went wrong!"}`);
     } finally {
       setIsSubmitting(false);
@@ -63,7 +52,6 @@ const Contact = () => {
             noValidate
           >
             <div>
-              {/* <Label htmlFor="name">Name</Label> */}
               <Input
                 type="text"
                 id="name"
@@ -74,7 +62,6 @@ const Contact = () => {
             </div>
 
             <div>
-              {/* <Label htmlFor="email">Email</Label> */}
               <Input
                 type="email"
                 id="email"
@@ -85,7 +72,6 @@ const Contact = () => {
             </div>
 
             <div>
-              {/* <Label htmlFor="message">Message</Label> */}
               <Textarea
                 id="message"
                 name="message"
@@ -109,18 +95,6 @@ const Contact = () => {
               </Button>
             </div>
           </form>
-          {/* {formStatus && (
-            <div
-              className={`mt-4 p-4 rounded-md ${
-                formStatus.success
-                  ? "bg-green-100 text-green-700"
-                  : "bg-red-100 text-red-700"
-              }`}
-              aria-live="polite"
-            >
-              {formStatus.message}
-            </div>
-          )} */}
         </div>
       </div>
     </section>
